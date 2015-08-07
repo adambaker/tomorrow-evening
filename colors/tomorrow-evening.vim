@@ -11,7 +11,7 @@ let s:line = "282a2e"
 let s:comment = "969896"
 let s:red = "cc6666"
 let s:orange = "de935f"
-let s:yellow = "f0c674"
+let s:yellow = "c4a000"
 let s:green = "b5bd68"
 let s:aqua = "8abeb7"
 let s:blue = "81a2be"
@@ -292,6 +292,13 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
 	" Vim Highlighting
 	call <SID>X("vimCommand", s:red, "", "none")
+
+	" Clojure Highlighting
+	call <SID>X("Keyword", s:green, "", "none")
+	call <SID>X("SpecialChar", s:purple, "", "none")
+	call <SID>X("Macro", s:purple, "", "none")
+	call <SID>X("Exception", s:orange, "", "none")
+	call <SID>X("Error", s:red, "", "none")
 
 	" C Highlighting
 	call <SID>X("cType", s:yellow, "", "")
