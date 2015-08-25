@@ -300,6 +300,12 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("Exception", s:orange, "", "none")
 	call <SID>X("Error", s:red, "", "none")
 
+	" SQL Highlighting
+	call <SID>X("sqlString", s:green, "", "none")
+	call <SID>X("sqlOperator", s:aqua, "", "none")
+	call <SID>X("sqlKeyword", s:aqua, "", "none")
+	call <SID>X("sqlStatement", s:orange, "", "none")
+
 	" C Highlighting
 	call <SID>X("cType", s:yellow, "", "")
 	call <SID>X("cStorageClass", s:purple, "", "")
